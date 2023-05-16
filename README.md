@@ -77,6 +77,9 @@ From Available Profiles, select System Administrator and move it to Selected Pro
 <img width="1440" alt="5" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/23d93fad-19cf-42b8-abba-1a13f629b427">
 
 
+
+
+
 Creation Of Fields For The Department Object:
 
 1.Click the gear icon and select Setup. This launches Setup in a new tab. 
@@ -123,5 +126,43 @@ NOTE- See activity 2, 3, 4 below to create a lookup field, Roll-up summary field
 
 
 
+
+Data Import
+
+From Setup, click the Home tab.
+
+1)In the Quick Find box, enter Data Import and select Data Import Wizard.
+2)Click Launch Wizard!
+3)Click the Custom Objects tab and select the Departments object.
+4)Select Add new records.
+5)Click CSV and choose file Department_CSV which we made earlier. Click Next.
+6)Since the field names in the CSV file (CSV Header) are the same as the field names in your object (Mapped Salesforce Object), the fields are automatically mapped. Click Next.
+
+The next screen gives you a summary of your data import. Click Start Import.
+Click OK on the popup.
+
+
+<img width="1440" alt="7" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/a018acac-5a31-4ec9-b95a-793020187e96">
+
+
+
+
+Creating A User In Salesforce
+1.From Setup, in the Quick Find box, enter Users. 
+2.Select Users. 
+3.Click New User. 
+4.Enter the First Name Travel Approval and Last Name manager and (Your) email address and a  unique username in the    
+  form of an email address. By default, the username is the same as the email address. 
+5.Select a User License as Salesforce. 
+
+  NOTE- In the Developer edition  Salesforce license can only be used by 2 Users at a time in Dev Org, If you don’t find Salesforce   
+  license then deactivate a user who has Salesforce license Or change the license type from Salesforce to any other. 
+
+6.Select a profile as Standard user. 
+7.Check Generate new password and notify the user immediately to have the user’s login name and a temporary password        
+ emailed to your email. 
+ 
+ 
+ <img width="1440" alt="2" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/151381cc-7c39-4e4b-ba50-7b882116440e">
 
 
