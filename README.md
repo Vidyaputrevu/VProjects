@@ -77,6 +77,47 @@ From Available Profiles, select System Administrator and move it to Selected Pro
 <img width="1440" alt="5" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/23d93fad-19cf-42b8-abba-1a13f629b427">
 
 
+Creation Of Fields For The Department Object:
+
+1.Click the gear icon and select Setup. This launches Setup in a new tab. 
+2.Click the Object Manager tab next to Home. 
+3.Select Department 
+4.Select Fields & Relationships from the left navigation 
+5.Click New 
+6.Select the Text as the Data Type, click Next. 
+7.For Field Label, enter Department Code and enter 5 in Length. 
+8.Click Next, Next, then Save & New. 
+9.Follow above steps and create two more Text type field - District & State. 
+10.Also, Provide Length 40 for both District and State field. 
+11.Create URL type field & give “School website” as the field label. 
+
+These are fields and their data types we need to create and make one by one – 
+
+NOTE- See activity 2, 3, 4 below to create a lookup field, Roll-up summary field & Picklist field 
+ 
+ Object Name         Field Name             Data Type  
+
+1. Employee Detail-  Date of Birth          Date 
+                     Gender                 Picklist (Male, Female) 
+                     Department             Lookup (Department)(See activity 2 to create lookup) 
+	 	                  Employee Id            Text (Length - 12) 
+ 	 	    
+2. Expense-         Employee           	    Lookup (Employee Detail) 
+                    Total Item              Rollup summary (Expense Item) 
+ 	 	    
+3. Expense Item -   Expense             	    Master Detail (Expense) 
+                    Expense Type     	       Pick List (Values are- Transport, Hotel, Meal, Others) 
+	 	 	               Amount               	    Currency 
+ 
+4. Travel Approval- Employee Name     	      Lookup (Employee Detail) 
+	     	 	           Department           	   Lookup (Department) 
+                    Destination state    	   Text (Length – 40) 
+	 	 	               Purpose of trip      	   Text (Length – 256) 
+	 	 	               Trip start date           Date 
+	 	 	               Trip End date        	    Date 
+	 	 	               Status                    Picklist (Values are- Approved, Rejected) 
+                    
+        NOTE- Make Trip Start Date and Trip End Date field required when making these field 
 
 
 
