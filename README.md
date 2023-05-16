@@ -1,6 +1,6 @@
 # VProjects
 
-Build An Employee Travel Approval Application For Corporates
+Building An Employee Travel Approval Application For Corporates
 
 The Travel Application for Corporate using Salesforce is a project that involves developing a customized solution for managing corporate travel using the Salesforce platform. It includes features such as booking management, travel itinerary management, expense tracking, and reporting, all integrated within the Salesforce CRM. This system can be used by corporate travelers to simplify their travel booking and management processes, and help them stay organized while on the go. The application can also provide companies with data and analytics to optimize their travel policies and reduce expenses, all within the Salesforce environment.
 
