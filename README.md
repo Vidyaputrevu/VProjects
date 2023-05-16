@@ -255,7 +255,8 @@ REPORTS:
 Reports in Salesforce is a list of records that meet a particular criterion which gives an answer to a particular question. These records are displayed as a table that can be filtered or grouped based on any field. 
 
 
-<img width="1440" alt="1" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/12453868-22a1-44d7-b49c-7d610af8b749">
+<img width="1440" alt="Screenshot 2023-05-16 at 2 05 30 PM" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/a60c4c2a-3823-4949-90d2-585ec65ddd18">
+
 
 <img width="1440" alt="12" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/2a611345-bc12-4153-a183-9c7707f2c3a5">
 
