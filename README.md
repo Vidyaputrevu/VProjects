@@ -24,8 +24,20 @@ Creating a developer org in salesforce.
 <img width="1440" alt="Screenshot 2023-05-16 at 2 10 49 PM" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/2136946b-92b7-47c4-a76f-67713332521b">
 <img width="1440" alt="2" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/829a6efc-0698-4e41-899f-2b73d4a8976e">
 
-Creation Of Department Object For Travel Approval App
-For this Travel Approval we need to create 5 objects   Department, Employee Detail, Expense, Expense Items, and Travel Approval. The below steps will assist you in creating those objects. 
+
+
+
+Creation Of Department Object For Travel Approval App:
+
+For this Travel Approval we need to create 5 objects   
+	Department
+	Employee Detail
+	Expense
+	Expense Items and 
+	Travel Approval. 
+
+The below steps will assist you in creating those objects. 
+ 
  
 Create Department Object:
  
@@ -49,6 +61,7 @@ In the same way create 4 more objects Employee Detail, Expense, Expense Items, a
 
 
 Custom Tab Creation
+
 Now create a custom tab. Click the Home tab. 
  
 1.	Enter Tabs in Quick Find and select Tabs. 
@@ -64,7 +77,7 @@ Now create a custom tab. Click the Home tab.
 
 
 Create Travel Approval App
-Create the Travel Approval app
+
 
 From Setup, enter App Manager in the Quick Find and select App Manager.
 Click New Lightning App.
@@ -148,6 +161,8 @@ Click OK on the popup.
 
 
 Creating A User In Salesforce
+
+
 1.From Setup, in the Quick Find box, enter Users. 
 2.Select Users. 
 3.Click New User. 
@@ -164,5 +179,114 @@ Creating A User In Salesforce
  
  
  <img width="1440" alt="2" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/151381cc-7c39-4e4b-ba50-7b882116440e">
+
+
+
+Use Customization:
+
+Customization refers to custom software development and coding to add robust features to your CRM platform. These features can be integrated with your business to have a scalable impact. 
+
+
+Customize Travel Approval Object Page Layout
+1. From the Object Manager, search for the Travel approval object  
+2. click on page layouts and  click Travel Approval Layout 
+3. Drag the Section from the top pane to the lower pane directly below the Information section. When dragging over the page, you get a visual indicator of where you can drop the new section. 
+4. Name the section Trip Info, leave the rest of the settings at their default values, and  
+5. Then click on OK. 
+6. Drag Trip Start Date and Trip End Date, Status from the top pane into the left-hand column of the Trip Info 
+  section. 
+7. Drag the Destination State and Purpose of a trip from, department the top pane into the right-hand column of the Trip 
+  Info section. 
+8. Click Save. 
+
+
+<img width="1440" alt="8" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/f4640f13-4b65-4b2e-9b47-2dee995804da">
+
+<img width="1440" alt="9" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/6fae0293-c8b8-4fd5-a445-04ff4a2db210">
+
+
+
+
+Add Business Logic To Travel App
+
+
+Validation Rule - It can contain a formula or expression that evaluates the data in one or more fields & returns a value of true or false. Validation Rules also include an error message to display to the user when the rule returns a value true due to an invalid value/data. 
+
+Formulae Fields - 1)First, we need to upload a zip file to your Salesforce environment that contains all the images we use. You should have 2)a file titled StatusImages.zip.
+3)Click the setup
+4)Click Static Resources in Quick Find & Click New.
+5)Enter the following values for your static resource
+
+Parameter	Value
+Name		StatusImages
+File		StatusImages.zip
+Cache-Control	Private
+
+Now, select the travel approval object.
+
+Select Fields & Relationships, 
+Click New
+Select Formula data type, and Click Next.
+
+Enter the following values:
+Field Label: Status Indicator
+Field Name: Status_Indicator (This automatically gets sent when you tab out of the Field Label field)
+Formula Return Type: Tex
+
+Click next & Copy and paste the following formula into the formula editor.
+
+IF( ISPICKVAL( Status c c, 'Approved'), IMAGE("/resource/StatusImages/thumbs-up.png", "Accepted", 20, 20),
+IF ( ISPICKVAL( Status c c, 'Rejected'), IMAGE("/resource/StatusImages/thumbs-down.png", "Rejected", 20, 20), IMAGE("/resource/StatusImages/draft.png", "In-Process", 20, 20)))
+
+Click Next, Next, Save.
+
+VALIDATION RULE:
+
+<img width="1440" alt="10" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/6d838134-de3c-4cb6-abd3-c20d15e395e9">
+
+FROMULA FIELD: 
+
+<img width="1440" alt="11" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/de42994c-5c78-40b5-aab1-78ab14a13e53">
+
+
+
+REPORTS:
+
+Reports in Salesforce is a list of records that meet a particular criterion which gives an answer to a particular question. These records are displayed as a table that can be filtered or grouped based on any field. 
+
+
+<img width="1440" alt="1" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/12453868-22a1-44d7-b49c-7d610af8b749">
+
+<img width="1440" alt="12" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/2a611345-bc12-4153-a183-9c7707f2c3a5">
+
+
+<img width="1440" alt="13" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/b7872602-d2a6-4b57-9f6c-f7cb1537bdd8">
+
+
+
+DASHBOARDS:
+
+Dashboards let you curate data from reports using charts, tables, and metrics. If your colleagues need more information, then they're able to view your dashboard's data-supplying reports. Dashboard filters make it easy for users to apply different data perspectives to a single dashboard. 
+
+
+
+<img width="1440" alt="14" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/f27c5a5a-3f4c-4d4c-9e45-1c309fa78285">
+
+
+<img width="1440" alt="15" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/8a46537d-d366-46ed-b9b2-f0c5a1a48798">
+
+
+
+
+
+
+
+
+
+
+
+
+
+![THANK YOU IMAGE](https://github.com/Vidyaputrevu/VProjects/assets/133752575/fdc274c1-0de1-4da2-a518-c10917095222)
 
 
