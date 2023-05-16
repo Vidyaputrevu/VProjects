@@ -119,6 +119,7 @@ NOTE- See activity 2, 3, 4 below to create a lookup field, Roll-up summary field
                     
         NOTE- Make Trip Start Date and Trip End Date field required when making these field 
 
+<img width="1440" alt="6" src="https://github.com/Vidyaputrevu/VProjects/assets/133752575/38588bb1-6244-4a23-b715-b3c1b0e6a02b">
 
 
 
